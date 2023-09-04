@@ -1,6 +1,6 @@
 # Moments-Backend
 
-You can find the frontend repository [Here](https://github.com/GabSilv219/CRUD_products-Frontend/tree/master)
+You can find the frontend repository [Here](https://github.com/GabSilv219/Moments-Frontend/tree/master)
 > Status: Done ✅
 
 ## 🔨 Tools and Libs used in this project:
