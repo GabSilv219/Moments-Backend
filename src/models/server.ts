@@ -3,6 +3,7 @@ import cors from 'cors';
 import routes from '../routes';
 import db from '../db/connection';
 import dotenv from 'dotenv'
+import path from 'path';
 
 dotenv.config();
 
@@ -37,6 +38,7 @@ class Server {
     midlewares() {
         this.app.use(express.json());
         this.app.use(cors());
+        this.app.use("/uploads", express.static(path.resolve(__dirname, '..', 'uploads')));
     }
 
     async dbConnect() {

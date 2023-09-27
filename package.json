@@ -3,14 +3,22 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "engines": {
+    "node": "18"
+  },
   "scripts": {
-    "start": "nodemon dist/index.js"
+    "dev": "tsx src/index.ts",
+    "build": "tsup src",
+    "start": "node dist/index.js"
   },
   "devDependencies": {
     "@types/cors": "^2.8.13",
     "@types/express": "^4.17.17",
     "@types/multer": "^1.4.7",
-    "nodemon": "^3.0.1"
+    "@types/node": "^20.7.0",
+    "nodemon": "^3.0.1",
+    "tsup": "^7.2.0",
+    "tsx": "^3.13.0"
   },
   "dependencies": {
     "cors": "^2.8.5",
