@@ -1,9 +1,8 @@
 "use strict";
-const dotenv = require("dotenv");
-
-dotenv.config();
 
 // src/config/database.js
+var dotenv = require("dotenv");
+dotenv.config();
 module.exports = {
   dialect: "postgres",
   host: process.env.PGHOST,

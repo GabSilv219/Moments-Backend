@@ -1,10 +1,14 @@
+const dotenv = require("dotenv");
+
+dotenv.config();
+
 module.exports = {
-  dialect: 'mysql',
-  host: '127.0.0.1',
-  port: 3306,
-  database: 'momentsApi',
-  username: 'gabsilv',
-  password: 'unicorn',
+  dialect: 'postgres',
+  host: process.env.PGHOST,
+  port: process.env.PGPORT,
+  database: process.env.PGDATABASE,
+  username: process.env.PGUSER,
+  password: process.env.PGPASSWORD,
   define: {
     timestamps: true,
     underscored: true
